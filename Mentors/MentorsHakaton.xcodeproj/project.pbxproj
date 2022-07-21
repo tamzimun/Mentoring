@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C1C6059287AB48900249B41 /* MentorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C6058287AB48900249B41 /* MentorProfileViewController.swift */; };
+		1C1C605B287AE19000249B41 /* MentorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C605A287AE19000249B41 /* MentorListViewController.swift */; };
+		1C1C605D287AE1CF00249B41 /* MentorShowPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C605C287AE1CF00249B41 /* MentorShowPostViewController.swift */; };
+		1C1C605F287AE2B600249B41 /* ShowPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C605E287AE2B600249B41 /* ShowPostTableViewCell.swift */; };
+		1C1C6061287AE2DE00249B41 /* MentorListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C6060287AE2DE00249B41 /* MentorListTableViewCell.swift */; };
+		1C1C6063287B2CEA00249B41 /* EditMentorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C6062287B2CEA00249B41 /* EditMentorProfileViewController.swift */; };
+		1C3BD09E287E99930031B048 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BD09D287E99930031B048 /* AddPostViewController.swift */; };
+		1C5854062879612C009C8FD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5854052879612C009C8FD9 /* AppDelegate.swift */; };
+		1C5854082879612C009C8FD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5854072879612C009C8FD9 /* SceneDelegate.swift */; };
+		1C58540A2879612C009C8FD9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5854092879612C009C8FD9 /* HomeViewController.swift */; };
+		1C58540D2879612C009C8FD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C58540B2879612C009C8FD9 /* Main.storyboard */; };
+		1C58540F2879612E009C8FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C58540E2879612E009C8FD9 /* Assets.xcassets */; };
+		1C5854122879612E009C8FD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5854102879612E009C8FD9 /* LaunchScreen.storyboard */; };
+		1C6B90AE2879654E00FC1CFF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1C6B90AD2879654E00FC1CFF /* Alamofire */; };
+		1C6B90B7287972D300FC1CFF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90B6287972D300FC1CFF /* Utilities.swift */; };
+		1C6B90B9287972F400FC1CFF /* NetworkManagerAF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90B8287972F400FC1CFF /* NetworkManagerAF.swift */; };
+		1C6B90BB2879731000FC1CFF /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90BA2879731000FC1CFF /* NetworkResponse.swift */; };
+		1C6B90BD2879737800FC1CFF /* SignUpMentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90BC2879737800FC1CFF /* SignUpMentor.swift */; };
+		1C6B90C0287973BB00FC1CFF /* SignUpMenti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90BF287973BB00FC1CFF /* SignUpMenti.swift */; };
+		1C6B90C2287973C300FC1CFF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90C1287973C300FC1CFF /* Login.swift */; };
+		1C6B90C52879746000FC1CFF /* SwichViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90C42879746000FC1CFF /* SwichViewController.swift */; };
+		1C6B90C72879748000FC1CFF /* SignUpMentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90C62879748000FC1CFF /* SignUpMentorViewController.swift */; };
+		1C6B90C9287976FD00FC1CFF /* SignUpMentiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90C8287976FD00FC1CFF /* SignUpMentiViewController.swift */; };
+		1C6B90CB2879771100FC1CFF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90CA2879771100FC1CFF /* LoginViewController.swift */; };
+		1C6B90DB2879820300FC1CFF /* ShowPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90DA2879820300FC1CFF /* ShowPost.swift */; };
+		1C6B90DD2879927600FC1CFF /* AddPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90DC2879927600FC1CFF /* AddPost.swift */; };
+		1C6B90DF2879928700FC1CFF /* MentorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90DE2879928700FC1CFF /* MentorList.swift */; };
+		1C6B90E1287992A700FC1CFF /* MentorProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90E0287992A700FC1CFF /* MentorProfile.swift */; };
+		1C6B90E3287992B100FC1CFF /* MentiProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B90E2287992B100FC1CFF /* MentiProfile.swift */; };
+		1C6C4F8A287F8D6F000F321B /* EditMenteeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6C4F89287F8D6F000F321B /* EditMenteeViewController.swift */; };
+		1C6C4F8E287F9BA9000F321B /* MentorFollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6C4F8D287F9BA9000F321B /* MentorFollowViewController.swift */; };
+		1C6C4F90287FB819000F321B /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6C4F8F287FB819000F321B /* NotificationViewController.swift */; };
+		1C6C4F95287FBAA3000F321B /* NotifcationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6C4F94287FBAA3000F321B /* NotifcationTableViewCell.swift */; };
+		1CA2D8BA287D7F1600247D0F /* MentorProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA2D8B9287D7F1600247D0F /* MentorProfileTableViewCell.swift */; };
+		1CA2D8BC287D9D5600247D0F /* MentorProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA2D8BB287D9D5600247D0F /* MentorProfileImage.swift */; };
+		1CA2D8BE287DA7E600247D0F /* Uploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA2D8BD287DA7E600247D0F /* Uploader.swift */; };
+		1CB31B96287C10B000BD43FB /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB31B95287C10B000BD43FB /* MainTabBarController.swift */; };
+		1CB31B98287C19F100BD43FB /* MenteeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB31B97287C19F100BD43FB /* MenteeProfileViewController.swift */; };
+		1CB31BA2287C30C900BD43FB /* MainProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB31BA1287C30C900BD43FB /* MainProfileViewController.swift */; };
+		1CB31BA4287C335700BD43FB /* UIViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB31BA3287C335700BD43FB /* UIViewController+ext.swift */; };
+		1CD83D63287F4CCA007A0C13 /* aida.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1CD83D62287F4CCA007A0C13 /* aida.mp4 */; };
+		1CD83D65287F50CB007A0C13 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD83D64287F50CB007A0C13 /* FilterViewController.swift */; };
+		A1C0447F2ECE4E2647D11A45 /* Pods_MentorsHakaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B13866F29451864EA417D30 /* Pods_MentorsHakaton.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C1C6058287AB48900249B41 /* MentorProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorProfileViewController.swift; sourceTree = "<group>"; };
+		1C1C605A287AE19000249B41 /* MentorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorListViewController.swift; sourceTree = "<group>"; };
+		1C1C605C287AE1CF00249B41 /* MentorShowPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorShowPostViewController.swift; sourceTree = "<group>"; };
+		1C1C605E287AE2B600249B41 /* ShowPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPostTableViewCell.swift; sourceTree = "<group>"; };
+		1C1C6060287AE2DE00249B41 /* MentorListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorListTableViewCell.swift; sourceTree = "<group>"; };
+		1C1C6062287B2CEA00249B41 /* EditMentorProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMentorProfileViewController.swift; sourceTree = "<group>"; };
+		1C3BD09D287E99930031B048 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		1C5854022879612C009C8FD9 /* MentorsHakaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentorsHakaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C5854052879612C009C8FD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C5854072879612C009C8FD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1C5854092879612C009C8FD9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1C58540C2879612C009C8FD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C58540E2879612E009C8FD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C5854112879612E009C8FD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C5854132879612E009C8FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C6B90B6287972D300FC1CFF /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		1C6B90B8287972F400FC1CFF /* NetworkManagerAF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerAF.swift; sourceTree = "<group>"; };
+		1C6B90BA2879731000FC1CFF /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		1C6B90BC2879737800FC1CFF /* SignUpMentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMentor.swift; sourceTree = "<group>"; };
+		1C6B90BF287973BB00FC1CFF /* SignUpMenti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMenti.swift; sourceTree = "<group>"; };
+		1C6B90C1287973C300FC1CFF /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		1C6B90C42879746000FC1CFF /* SwichViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwichViewController.swift; sourceTree = "<group>"; };
+		1C6B90C62879748000FC1CFF /* SignUpMentorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMentorViewController.swift; sourceTree = "<group>"; };
+		1C6B90C8287976FD00FC1CFF /* SignUpMentiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMentiViewController.swift; sourceTree = "<group>"; };
+		1C6B90CA2879771100FC1CFF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1C6B90DA2879820300FC1CFF /* ShowPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPost.swift; sourceTree = "<group>"; };
+		1C6B90DC2879927600FC1CFF /* AddPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPost.swift; sourceTree = "<group>"; };
+		1C6B90DE2879928700FC1CFF /* MentorList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorList.swift; sourceTree = "<group>"; };
+		1C6B90E0287992A700FC1CFF /* MentorProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorProfile.swift; sourceTree = "<group>"; };
+		1C6B90E2287992B100FC1CFF /* MentiProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentiProfile.swift; sourceTree = "<group>"; };
+		1C6C4F89287F8D6F000F321B /* EditMenteeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMenteeViewController.swift; sourceTree = "<group>"; };
+		1C6C4F8D287F9BA9000F321B /* MentorFollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorFollowViewController.swift; sourceTree = "<group>"; };
+		1C6C4F8F287FB819000F321B /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		1C6C4F94287FBAA3000F321B /* NotifcationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifcationTableViewCell.swift; sourceTree = "<group>"; };
+		1CA2D8B9287D7F1600247D0F /* MentorProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorProfileTableViewCell.swift; sourceTree = "<group>"; };
+		1CA2D8BB287D9D5600247D0F /* MentorProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorProfileImage.swift; sourceTree = "<group>"; };
+		1CA2D8BD287DA7E600247D0F /* Uploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uploader.swift; sourceTree = "<group>"; };
+		1CB31B95287C10B000BD43FB /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		1CB31B97287C19F100BD43FB /* MenteeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeProfileViewController.swift; sourceTree = "<group>"; };
+		1CB31BA1287C30C900BD43FB /* MainProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfileViewController.swift; sourceTree = "<group>"; };
+		1CB31BA3287C335700BD43FB /* UIViewController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ext.swift"; sourceTree = "<group>"; };
+		1CD83D62287F4CCA007A0C13 /* aida.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = aida.mp4; sourceTree = "<group>"; };
+		1CD83D64287F50CB007A0C13 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		7B13866F29451864EA417D30 /* Pods_MentorsHakaton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MentorsHakaton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC29182B26F4BABA0D7F857 /* Pods-MentorsHakaton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorsHakaton.release.xcconfig"; path = "Target Support Files/Pods-MentorsHakaton/Pods-MentorsHakaton.release.xcconfig"; sourceTree = "<group>"; };
+		DDA5845BCBBE7F2467C9D0D1 /* Pods-MentorsHakaton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorsHakaton.debug.xcconfig"; path = "Target Support Files/Pods-MentorsHakaton/Pods-MentorsHakaton.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C5853FF2879612B009C8FD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C0447F2ECE4E2647D11A45 /* Pods_MentorsHakaton.framework in Frameworks */,
+				1C6B90AE2879654E00FC1CFF /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C5853F92879612B009C8FD9 = {
+			isa = PBXGroup;
+			children = (
+				1C5854042879612C009C8FD9 /* MentorsHakaton */,
+				1C5854032879612C009C8FD9 /* Products */,
+				5CD12940347A66B171ED042D /* Pods */,
+				94D34F4B5BE322B0D8B55437 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1C5854032879612C009C8FD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C5854022879612C009C8FD9 /* MentorsHakaton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C5854042879612C009C8FD9 /* MentorsHakaton */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B90B12879722F00FC1CFF /* Media */,
+				1C6B90B22879728800FC1CFF /* Helpers */,
+				1C6B90B32879728F00FC1CFF /* NetworkManagerAF */,
+				1C6B90AF287971F100FC1CFF /* Models */,
+				1C6B90B0287971F900FC1CFF /* View Controllers */,
+				1C982B362879636C009D73BE /* Additional files */,
+				1C58540B2879612C009C8FD9 /* Main.storyboard */,
+				1C5854132879612E009C8FD9 /* Info.plist */,
+			);
+			path = MentorsHakaton;
+			sourceTree = "<group>";
+		};
+		1C6B90AF287971F100FC1CFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B90BE2879738300FC1CFF /* Authorization */,
+				1C6B90C3287973E700FC1CFF /* Post */,
+				1C6B90CE287977C500FC1CFF /* MentorList */,
+				1C6B90D12879782900FC1CFF /* Profile */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C6B90B0287971F900FC1CFF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B90CC2879779400FC1CFF /* Authorization */,
+				1C7C4DFD287C3ACB004F79D4 /* TabBarController */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1C6B90B12879722F00FC1CFF /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				1CD83D62287F4CCA007A0C13 /* aida.mp4 */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		1C6B90B22879728800FC1CFF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B90B6287972D300FC1CFF /* Utilities.swift */,
+				1CB31BA3287C335700BD43FB /* UIViewController+ext.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1C6B90B32879728F00FC1CFF /* NetworkManagerAF */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B90B8287972F400FC1CFF /* NetworkManagerAF.swift */,
+				1C6B90BA2879731000FC1CFF /* NetworkResponse.swift */,
+				1CA2D8BD287DA7E600247D0F /* Uploader.swift */,
+			);
+			path = NetworkManagerAF;
+			sourceTree = "<group>";
+		};
+		1C6B90BE2879738300FC1CFF /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B90BC2879737800FC1CFF /* SignUpMentor.swift */,
+				1C6B90BF287973BB00FC1CFF /* SignUpMenti.swift */,
+				1C6B90C1287973C300FC1CFF /* Login.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		1C6B90C3287973E700FC1CFF /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B90D32879784B00FC1CFF /* ShowPost */,
+				1C6B90D22879784200FC1CFF /* AddPost */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		1C6B90CC2879779400FC1CFF /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				1C5854092879612C009C8FD9 /* HomeViewController.swift */,
+				1C6B90C42879746000FC1CFF /* SwichViewController.swift */,
+				1C6B90C62879748000FC1CFF /* SignUpMentorViewController.swift */,
+				1C6B90C8287976FD00FC1CFF /* SignUpMentiViewController.swift */,
+				1C6B90CA2879771100FC1CFF /* LoginViewController.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		1C6B90CD287977AE00FC1CFF /* ShowPosts */ = {
+			isa = PBXGroup;
+			children = (
+				1C1C605C287AE1CF00249B41 /* MentorShowPostViewController.swift */,
+			);
+			path = ShowPosts;
+			sourceTree = "<group>";
+		};
+		1C6B90CE287977C500FC1CFF /* MentorList */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B90DE2879928700FC1CFF /* MentorList.swift */,
+				1C1C6060287AE2DE00249B41 /* MentorListTableViewCell.swift */,
+			);
+			path = MentorList;
+			sourceTree = "<group>";
+		};
+		1C6B90CF287977F300FC1CFF /* MentiProfile */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B90E2287992B100FC1CFF /* MentiProfile.swift */,
+			);
+			path = MentiProfile;
+			sourceTree = "<group>";
+		};
+		1C6B90D02879780800FC1CFF /* MentorProfile */ = {
+			isa = PBXGroup;
+			children = (
+				1C6C4F93287FBA8A000F321B /* New Group */,
+				1C6B90E0287992A700FC1CFF /* MentorProfile.swift */,
+				1CA2D8B9287D7F1600247D0F /* MentorProfileTableViewCell.swift */,
+				1C6C4F94287FBAA3000F321B /* NotifcationTableViewCell.swift */,
+			);
+			path = MentorProfile;
+			sourceTree = "<group>";
+		};
+		1C6B90D12879782900FC1CFF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1CA2D8BF287DB84800247D0F /* ProfileImage */,
+				1C6B90D02879780800FC1CFF /* MentorProfile */,
+				1C6B90CF287977F300FC1CFF /* MentiProfile */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1C6B90D22879784200FC1CFF /* AddPost */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B90DC2879927600FC1CFF /* AddPost.swift */,
+			);
+			path = AddPost;
+			sourceTree = "<group>";
+		};
+		1C6B90D32879784B00FC1CFF /* ShowPost */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B90DA2879820300FC1CFF /* ShowPost.swift */,
+				1C1C605E287AE2B600249B41 /* ShowPostTableViewCell.swift */,
+			);
+			path = ShowPost;
+			sourceTree = "<group>";
+		};
+		1C6B90D42879787600FC1CFF /* AddPost */ = {
+			isa = PBXGroup;
+			children = (
+				1C3BD09D287E99930031B048 /* AddPostViewController.swift */,
+			);
+			path = AddPost;
+			sourceTree = "<group>";
+		};
+		1C6B90D5287978A500FC1CFF /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B90CD287977AE00FC1CFF /* ShowPosts */,
+				1C6B90D42879787600FC1CFF /* AddPost */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		1C6B90D6287978B900FC1CFF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1CB31BA1287C30C900BD43FB /* MainProfileViewController.swift */,
+				1C6B90D8287978D300FC1CFF /* MentorProfile */,
+				1C6B90D7287978C300FC1CFF /* MentiProfile */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1C6B90D7287978C300FC1CFF /* MentiProfile */ = {
+			isa = PBXGroup;
+			children = (
+				1CB31B97287C19F100BD43FB /* MenteeProfileViewController.swift */,
+				1C6C4F89287F8D6F000F321B /* EditMenteeViewController.swift */,
+			);
+			path = MentiProfile;
+			sourceTree = "<group>";
+		};
+		1C6B90D8287978D300FC1CFF /* MentorProfile */ = {
+			isa = PBXGroup;
+			children = (
+				1C1C6058287AB48900249B41 /* MentorProfileViewController.swift */,
+				1C1C6062287B2CEA00249B41 /* EditMentorProfileViewController.swift */,
+				1C6C4F8F287FB819000F321B /* NotificationViewController.swift */,
+			);
+			path = MentorProfile;
+			sourceTree = "<group>";
+		};
+		1C6B90D9287978ED00FC1CFF /* MentorsList */ = {
+			isa = PBXGroup;
+			children = (
+				1CB31BA7287C381E00BD43FB /* MentorList */,
+			);
+			path = MentorsList;
+			sourceTree = "<group>";
+		};
+		1C6C4F93287FBA8A000F321B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		1C7C4DFD287C3ACB004F79D4 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				1CB31B95287C10B000BD43FB /* MainTabBarController.swift */,
+				1C6B90D5287978A500FC1CFF /* Posts */,
+				1C6B90D9287978ED00FC1CFF /* MentorsList */,
+				1C6B90D6287978B900FC1CFF /* Profile */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		1C982B362879636C009D73BE /* Additional files */ = {
+			isa = PBXGroup;
+			children = (
+				1C5854052879612C009C8FD9 /* AppDelegate.swift */,
+				1C5854072879612C009C8FD9 /* SceneDelegate.swift */,
+				1C5854102879612E009C8FD9 /* LaunchScreen.storyboard */,
+				1C58540E2879612E009C8FD9 /* Assets.xcassets */,
+			);
+			path = "Additional files";
+			sourceTree = "<group>";
+		};
+		1CA2D8BF287DB84800247D0F /* ProfileImage */ = {
+			isa = PBXGroup;
+			children = (
+				1CA2D8BB287D9D5600247D0F /* MentorProfileImage.swift */,
+			);
+			path = ProfileImage;
+			sourceTree = "<group>";
+		};
+		1CB31BA7287C381E00BD43FB /* MentorList */ = {
+			isa = PBXGroup;
+			children = (
+				1C1C605A287AE19000249B41 /* MentorListViewController.swift */,
+				1CD83D64287F50CB007A0C13 /* FilterViewController.swift */,
+				1C6C4F8D287F9BA9000F321B /* MentorFollowViewController.swift */,
+			);
+			path = MentorList;
+			sourceTree = "<group>";
+		};
+		5CD12940347A66B171ED042D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDA5845BCBBE7F2467C9D0D1 /* Pods-MentorsHakaton.debug.xcconfig */,
+				CCC29182B26F4BABA0D7F857 /* Pods-MentorsHakaton.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		94D34F4B5BE322B0D8B55437 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B13866F29451864EA417D30 /* Pods_MentorsHakaton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C5854012879612B009C8FD9 /* MentorsHakaton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C5854162879612E009C8FD9 /* Build configuration list for PBXNativeTarget "MentorsHakaton" */;
+			buildPhases = (
+				0443A494A769888EDEDD69A2 /* [CP] Check Pods Manifest.lock */,
+				1C5853FE2879612B009C8FD9 /* Sources */,
+				1C5853FF2879612B009C8FD9 /* Frameworks */,
+				1C5854002879612B009C8FD9 /* Resources */,
+				367AD4FB317183401D833162 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MentorsHakaton;
+			packageProductDependencies = (
+				1C6B90AD2879654E00FC1CFF /* Alamofire */,
+			);
+			productName = MentorsHakaton;
+			productReference = 1C5854022879612C009C8FD9 /* MentorsHakaton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C5853FA2879612B009C8FD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					1C5854012879612B009C8FD9 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1C5853FD2879612B009C8FD9 /* Build configuration list for PBXProject "MentorsHakaton" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C5853F92879612B009C8FD9;
+			packageReferences = (
+				1C6B90AC2879654E00FC1CFF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 1C5854032879612C009C8FD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C5854012879612B009C8FD9 /* MentorsHakaton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C5854002879612B009C8FD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C5854122879612E009C8FD9 /* LaunchScreen.storyboard in Resources */,
+				1C58540F2879612E009C8FD9 /* Assets.xcassets in Resources */,
+				1CD83D63287F4CCA007A0C13 /* aida.mp4 in Resources */,
+				1C58540D2879612C009C8FD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0443A494A769888EDEDD69A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MentorsHakaton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		367AD4FB317183401D833162 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MentorsHakaton/Pods-MentorsHakaton-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MentorsHakaton/Pods-MentorsHakaton-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MentorsHakaton/Pods-MentorsHakaton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C5853FE2879612B009C8FD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C1C605F287AE2B600249B41 /* ShowPostTableViewCell.swift in Sources */,
+				1C1C605B287AE19000249B41 /* MentorListViewController.swift in Sources */,
+				1C3BD09E287E99930031B048 /* AddPostViewController.swift in Sources */,
+				1C58540A2879612C009C8FD9 /* HomeViewController.swift in Sources */,
+				1C5854062879612C009C8FD9 /* AppDelegate.swift in Sources */,
+				1C6B90E1287992A700FC1CFF /* MentorProfile.swift in Sources */,
+				1C6C4F8E287F9BA9000F321B /* MentorFollowViewController.swift in Sources */,
+				1C6B90B7287972D300FC1CFF /* Utilities.swift in Sources */,
+				1C6B90BB2879731000FC1CFF /* NetworkResponse.swift in Sources */,
+				1C1C6061287AE2DE00249B41 /* MentorListTableViewCell.swift in Sources */,
+				1CA2D8BA287D7F1600247D0F /* MentorProfileTableViewCell.swift in Sources */,
+				1C1C605D287AE1CF00249B41 /* MentorShowPostViewController.swift in Sources */,
+				1C6C4F95287FBAA3000F321B /* NotifcationTableViewCell.swift in Sources */,
+				1C5854082879612C009C8FD9 /* SceneDelegate.swift in Sources */,
+				1C6B90C72879748000FC1CFF /* SignUpMentorViewController.swift in Sources */,
+				1C6C4F90287FB819000F321B /* NotificationViewController.swift in Sources */,
+				1C1C6063287B2CEA00249B41 /* EditMentorProfileViewController.swift in Sources */,
+				1CB31BA4287C335700BD43FB /* UIViewController+ext.swift in Sources */,
+				1C6B90E3287992B100FC1CFF /* MentiProfile.swift in Sources */,
+				1CB31B96287C10B000BD43FB /* MainTabBarController.swift in Sources */,
+				1C6B90BD2879737800FC1CFF /* SignUpMentor.swift in Sources */,
+				1C6B90DD2879927600FC1CFF /* AddPost.swift in Sources */,
+				1C6B90C2287973C300FC1CFF /* Login.swift in Sources */,
+				1C6B90C9287976FD00FC1CFF /* SignUpMentiViewController.swift in Sources */,
+				1CA2D8BE287DA7E600247D0F /* Uploader.swift in Sources */,
+				1C6C4F8A287F8D6F000F321B /* EditMenteeViewController.swift in Sources */,
+				1CB31BA2287C30C900BD43FB /* MainProfileViewController.swift in Sources */,
+				1C6B90B9287972F400FC1CFF /* NetworkManagerAF.swift in Sources */,
+				1CA2D8BC287D9D5600247D0F /* MentorProfileImage.swift in Sources */,
+				1C6B90DB2879820300FC1CFF /* ShowPost.swift in Sources */,
+				1C6B90DF2879928700FC1CFF /* MentorList.swift in Sources */,
+				1CD83D65287F50CB007A0C13 /* FilterViewController.swift in Sources */,
+				1C1C6059287AB48900249B41 /* MentorProfileViewController.swift in Sources */,
+				1C6B90C0287973BB00FC1CFF /* SignUpMenti.swift in Sources */,
+				1C6B90CB2879771100FC1CFF /* LoginViewController.swift in Sources */,
+				1CB31B98287C19F100BD43FB /* MenteeProfileViewController.swift in Sources */,
+				1C6B90C52879746000FC1CFF /* SwichViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1C58540B2879612C009C8FD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C58540C2879612C009C8FD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1C5854102879612E009C8FD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C5854112879612E009C8FD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C5854142879612E009C8FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C5854152879612E009C8FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C5854172879612E009C8FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA5845BCBBE7F2467C9D0D1 /* Pods-MentorsHakaton.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Z5J6DCC8H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MentorsHakaton/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow to select galery photos to import to your profile.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = marlen.MentorsHakaton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C5854182879612E009C8FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCC29182B26F4BABA0D7F857 /* Pods-MentorsHakaton.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Z5J6DCC8H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MentorsHakaton/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow to select galery photos to import to your profile.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = marlen.MentorsHakaton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C5853FD2879612B009C8FD9 /* Build configuration list for PBXProject "MentorsHakaton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C5854142879612E009C8FD9 /* Debug */,
+				1C5854152879612E009C8FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C5854162879612E009C8FD9 /* Build configuration list for PBXNativeTarget "MentorsHakaton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C5854172879612E009C8FD9 /* Debug */,
+				1C5854182879612E009C8FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C6B90AC2879654E00FC1CFF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C6B90AD2879654E00FC1CFF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C6B90AC2879654E00FC1CFF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1C5853FA2879612B009C8FD9 /* Project object */;
+}
