@@ -172,12 +172,12 @@ final class NetworkManagerAF {
                 KeychainWrapper.standard.string(forKey: "token")
             }
         }
+        
         var urlRequest = URLRequest(url: url)
         urlRequest.addValue("Bearer \(retrievedToken ?? "")", forHTTPHeaderField: "Authorization")
         urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
         urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
         urlRequest.httpMethod = "GET"
-//        print("my token is \(retrievedToken ?? "")")
         
         let task = session.dataTask(with: urlRequest) { data, response, error in
             guard error == nil else {
