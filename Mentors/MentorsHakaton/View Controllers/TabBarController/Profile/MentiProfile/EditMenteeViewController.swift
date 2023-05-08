@@ -2,7 +2,7 @@
 //  EditMenteeViewController.swift
 //  MentorsHakaton
 //
-//  Created by Aida Moldaly on 14.07.2022.
+//  Created by tamzimun on 14.07.2022.
 //
 
 import UIKit

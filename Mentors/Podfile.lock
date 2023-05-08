@@ -1,14 +1,14 @@
 PODS:
   - AnyFormatKit (2.5.2)
   - Cosmos (23.0.0)
-  - Kingfisher (7.2.2)
+  - Kingfisher (7.6.2)
   - SwiftKeychainWrapper (4.0.1)
   - TinyConstraints (4.0.2)
 
 DEPENDENCIES:
   - AnyFormatKit (~> 2.5.2)
   - Cosmos (~> 23.0)
-  - Kingfisher (~> 7.0)
+  - Kingfisher (~> 7.6.2)
   - SwiftKeychainWrapper (~> 4.0)
   - TinyConstraints
 
@@ -23,10 +23,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AnyFormatKit: b0dbb2a5f2fe7a0fc97f401f8a219a47ee63a335
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
-  Kingfisher: 184d4d1a8c36666e663caf8e08abe87898595c53
+  Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
   SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: 61c5d2b562b79cdba424fd4a49eb392b210ef896
+PODFILE CHECKSUM: 75ff71e2cb24122bc945566280b2328c53c1844e
 
 COCOAPODS: 1.11.3

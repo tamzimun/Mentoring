@@ -2,7 +2,7 @@
 //  UIViewController+ext.swift
 //  MentorsHakaton
 //
-//  Created by Aida Moldaly on 11.07.2022.
+//  Created by tamzimun on 11.07.2022.
 //
 
 import UIKit
